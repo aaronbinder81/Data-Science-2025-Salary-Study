@@ -1,73 +1,81 @@
-# Talent Intelligence: Data Science Job Market (2025)
+# Data Science 2025 Salary Study
 
-Analyze real-world **data science job postings with salary & skills** to surface hiring trends, in-demand skills, and compensation signals.
+This project analyzes real-world **2025 data science job postings** to uncover
+salary trends, in-demand skills, and role-based compensation patterns.
 
-## Dataset (exact)
-**Kaggle:** *Data Science Job Postings with Salaries (2025)* by `elahehgolrokh`  
-Link: https://www.kaggle.com/datasets/elahehgolrokh/data-science-job-postings-with-salaries-2025
+It combines data analytics techniques with domain knowledge from technical
+recruiting to provide practical, market-driven insights.
 
-Why this dataset?
-- Already processed/analysis-ready (faster time-to-insights)
-- Includes **job title, location, salary fields, and skills** (key for market + pay analysis)
-- Recent (2025)
+---
 
-## Quickstart
+## Dataset
 
-### 1) Create & activate a virtual environment
-```bash
-python -m venv .venv
-# Windows:
-.venv\Scripts\activate
-# macOS/Linux:
-source .venv/bin/activate
-```
+**Source:** Kaggle – *Data Science Job Postings with Salaries (2025)*  
+Author: elahehgolrokh
 
-### 2) Install dependencies
-```bash
-pip install -r requirements.txt
-```
+The dataset includes:
+- Job titles and seniority levels  
+- Locations and employment types  
+- Salary ranges  
+- Skill requirements  
 
-### 3) Get the data (recommended: Kaggle API)
-1. Install Kaggle CLI and configure your API token:
-   - Create token: Kaggle → Account → "Create New API Token"
-   - Place `kaggle.json` at:
-     - Windows: `%USERPROFILE%\.kaggle\kaggle.json`
-     - macOS/Linux: `~/.kaggle/kaggle.json`
+> Raw data files are not committed to this repository per Kaggle’s usage terms.
 
-2. Download dataset into `data/raw/`:
-```bash
-kaggle datasets download -d elahehgolrokh/data-science-job-postings-with-salaries-2025 -p data/raw --unzip
-```
+---
 
-### 4) Run notebooks
-```bash
-jupyter lab
-```
+## Tools & Technologies
 
-Start with:
-- `notebooks/01_data_ingest_and_clean.ipynb`
-- `notebooks/02_eda_skill_demand.ipynb`
-- `notebooks/03_salary_signals.ipynb`
+- **Python** (pandas, numpy, matplotlib)
+- **SQL** (PostgreSQL)
+- **Jupyter Notebook**
+- **Git & GitHub**
 
-## Repo layout
-```
-.
+---
+
+## Key Questions Explored
+
+- Which skills are most frequently requested in 2025 data science roles?
+- How do salaries vary by role, seniority, and skill set?
+- Which skills are associated with higher-paying positions?
+- How wide are salary ranges across different job titles?
+
+---
+
+## Repository Structure
+
 ├── data/
-│   ├── raw/           # downloaded from Kaggle (ignored by git)
-│   └── processed/     # cleaned outputs (ignored by git)
-├── notebooks/         # analysis notebooks
-├── sql/               # Postgres schema + analysis queries
-├── src/               # reusable Python utilities
-├── reports/           # exported figures and summaries
+│ ├── raw/ # Kaggle downloads (gitignored)
+│ └── processed/ # Cleaned datasets (gitignored)
+├── notebooks/ # Data cleaning, EDA, salary analysis
+├── sql/ # Table schema and analysis queries
+├── src/ # Reusable Python utilities
+├── reports/ # Figures and written insights
 └── requirements.txt
-```
 
-## What you'll build (deliverables)
-- Skill demand ranking (top skills overall + by role)
-- Location & remote/hybrid breakdown (if present)
-- Salary distributions and top-paying skill combos
-- A small Postgres schema + analysis queries (joins/aggregations)
+---
 
-## License
-Code: MIT (see `LICENSE`).  
-Data: governed by Kaggle dataset terms (do not commit raw data files).
+## Key Deliverables
+
+- Skill demand rankings
+- Salary distributions by role and seniority
+- Top-paying skill combinations
+- PostgreSQL schema and analytical queries
+
+---
+
+## Future Enhancements
+
+- Interactive Streamlit dashboard
+- Skill co-occurrence analysis
+- Salary prediction baseline model
+- Year-over-year comparison with prior datasets
+
+---
+
+## Author
+
+**Aaron Binder**  
+M.S. Data Science (in progress)  
+Background in technical recruiting and analytics  
+GitHub: https://github.com/aaronbinder81
+>>>>>>> 4651de4e97f875d756fa40d1526a41b05325fa84

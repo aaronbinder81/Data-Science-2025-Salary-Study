@@ -1,6 +1,3 @@
--- Examples: update these once you load real data
-
--- Top skills
 SELECT skill, COUNT(*) AS demand_count
 FROM job_skills
 GROUP BY skill

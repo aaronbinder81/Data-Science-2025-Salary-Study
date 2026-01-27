@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/raw/
+data/processed/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Secrets
+kaggle.json
+*.env

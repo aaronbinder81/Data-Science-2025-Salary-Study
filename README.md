@@ -43,3 +43,38 @@ The dataset includes:
 
 ## Repository Structure
 
+├── data/
+│ ├── raw/ # Kaggle downloads (gitignored)
+│ └── processed/ # Cleaned datasets (gitignored)
+├── notebooks/ # Data cleaning, EDA, salary analysis
+├── sql/ # Table schema and analysis queries
+├── src/ # Reusable Python utilities
+├── reports/ # Figures and written insights
+└── requirements.txt
+
+---
+
+## Key Deliverables
+
+- Skill demand rankings
+- Salary distributions by role and seniority
+- Top-paying skill combinations
+- PostgreSQL schema and analytical queries
+
+---
+
+## Future Enhancements
+
+- Interactive Streamlit dashboard
+- Skill co-occurrence analysis
+- Salary prediction baseline model
+- Year-over-year comparison with prior datasets
+
+---
+
+## Author
+
+**Aaron Binder**  
+M.S. Data Science (in progress)  
+Background in technical recruiting and analytics  
+GitHub: https://github.com/aaronbinder81

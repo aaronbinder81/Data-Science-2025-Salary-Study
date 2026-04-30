@@ -78,4 +78,3 @@ The dataset includes:
 M.S. Data Science (in progress)  
 Background in technical recruiting and analytics  
 GitHub: https://github.com/aaronbinder81
->>>>>>> 4651de4e97f875d756fa40d1526a41b05325fa84
